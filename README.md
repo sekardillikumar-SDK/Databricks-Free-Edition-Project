@@ -10,13 +10,9 @@ The solution shows how data is ingested from multiple sources, transformed throu
 
 # 🏗️ Architecture Diagram
 
-Add your architecture diagram image in this repository and reference it
-like below:
-
 ![Architecture Diagram ](Image/Databricks_Architecture.png)
 
 ## Data Flow
-
 
 Data Sources
      ↓
@@ -73,15 +69,25 @@ databricks-medallion-architecture/
 The architecture supports multiple data sources:
 
 CSV Files
+
 Excel Files
+
 APIs / Web Services
+
 On-Premise Databases
+
 SQL Server
+
 Oracle
+
 MySQL
+
 Cloud Storage
+
 Azure
+
 AWS
+
 GCP
 
 ---------------------------------------------------------------------------------------------
@@ -93,14 +99,19 @@ The Bronze layer stores raw ingested data exactly as received from source system
 **Purpose**
 
 Store raw historical data
+
 Preserve original schema
+
 Enable replay and auditing
 
 **Features**
 
 Raw ingestion
+
 Append-only storage
+
 Schema-on-read
+
 Delta Lake storage format
 
 ---------------------------------------------------------------------------------------------
@@ -112,15 +123,21 @@ The Silver layer contains cleaned and validated data.
 **Purpose**
 
 Data cleansing
+
 Deduplication
+
 Standardization
+
 Business rule implementation
 
 **Features**
 
 Remove nulls and duplicates
+
 Apply transformations
+
 Standardize columns
+
 Data quality validation
 
 ---------------------------------------------------------------------------------------------
@@ -132,14 +149,20 @@ The Gold layer stores curated and aggregated datasets optimized for analytics an
 **Purpose**
 
 Create business-ready tables
+
 Support BI dashboards
+
 Improve query performance
+
 
 **Features**
 
 Aggregated datasets
+
 KPI calculations
+
 Star schema modeling
+
 Reporting optimization
 
 ---------------------------------------------------------------------------------------------
@@ -147,11 +170,17 @@ Reporting optimization
 ⚙️ Databricks Components Used
 
 Component			          Purpose
+
 Delta Lake			     ACID transactions and reliable storage
-Databricks Notebooks		PySpark and SQL development
+
+Databricks Notebooks		PySpark & SQL development
+
 Spark Cluster			     Distributed processing
+
 Databricks SQL			     Query engine for BI tools
+
 Unity Catalog			     Basic governance and access
+
 Workflow Jobs			     ETL scheduling
 
 ---------------------------------------------------------------------------------------------
@@ -159,10 +188,15 @@ Workflow Jobs			     ETL scheduling
 ## Technologies Used
 
 Databricks Free Edition
+
 Apache Spark
+
 PySpark
+
 Delta Lake
+
 Databricks SQL
+
 SQL
 
 ---------------------------------------------------------------------------------------------
@@ -170,13 +204,18 @@ SQL
 ## Databricks Dashboard 
 
 Live dashboards
+
 KPI monitoring
+
 Interactive reports
+
 Business analytics
+
 Direct Query support
 
+
 ---------------------------------------------------------------------------------------------
-## Job & Pipelinw 
+## Job & Pipeline
 
 ![Job](Image/Sales_Data_Job.png)
 
